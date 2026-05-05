@@ -313,16 +313,40 @@ export function HomePage() {
             style={{
               color: '#ffffff',
               fontFamily: 'system-ui, -apple-system, sans-serif',
-              fontSize: 'clamp(3rem, 12vw, 8rem)',
               fontWeight: 900,
               lineHeight: 0.95,
               letterSpacing: '-0.04em',
               margin: 0,
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              gap: '0.05em',
             }}
           >
-            <GlowText color="#ffd93d">¡Hola</GlowText>
-            <br />
-            <span style={{ color: '#ffd93d' }}>Eduardo!</span>
+            <span style={{
+              fontSize: 'clamp(4rem, 16vw, 12rem)',
+              color: '#ffffff',
+              textShadow: `
+                0 0 10px rgba(255,255,255,0.8),
+                0 0 30px rgba(255,255,255,0.5),
+                0 0 60px rgba(255,255,255,0.3)
+              `,
+            }}>
+              ¡Hola
+            </span>
+            <span style={{
+              fontSize: 'clamp(5rem, 20vw, 16rem)',
+              color: '#4da6ff',
+              textShadow: `
+                0 0 15px #4da6ff,
+                0 0 40px #4da6ff,
+                0 0 80px #4da6ff,
+                0 0 120px rgba(77,166,255,0.5)
+              `,
+              lineHeight: 0.9,
+            }}>
+              Eduardo!
+            </span>
           </motion.h1>
         </div>
 
